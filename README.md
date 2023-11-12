@@ -1,1 +1,3 @@
-# dashboard-01
+# Dashboard
+- reponsive
+- with light/dark mode
