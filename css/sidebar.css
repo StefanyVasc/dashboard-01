@@ -1,4 +1,30 @@
-.sidebar {
+aside{
+    height: 100vh;
+}
+
+aside .toggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+aside .toggle .logo{
+    display: flex;
+    gap: 0.5rem;
+}
+
+aside .toggle .logo img{
+    width: 2rem;
+    height: 2rem;
+}
+
+aside .toggle .close{
+    padding-right: 1rem;
+    display: none;
+}
+
+aside .sidebar{
     display: flex;
     flex-direction: column;
     background-color: var(--color-white);
@@ -10,11 +36,11 @@
     transition: all 0.3s ease;
 }
 
-.sidebar:hover {
+aside .sidebar:hover{
     box-shadow: none;
 }
 
-.sidebar a {
+aside .sidebar a{
     display: flex;
     align-items: center;
     color: var(--color-info-dark);
@@ -25,45 +51,45 @@
     transition: all 0.3s ease;
 }
 
-.sidebar a span {
+aside .sidebar a span{
     font-size: 1.6rem;
     transition: all 0.3s ease;
 }
 
-.sidebar a:last-child {
+aside .sidebar a:last-child{
     position: absolute;
     bottom: 2rem;
     width: 100%;
 }
 
-.sidebar a.active {
+aside .sidebar a.active{
     width: 100%;
     color: var(--color-primary);
     background-color: var(--color-light);
     margin-left: 0;
 }
 
-.sidebar a:hover {
-    color: var(--color-primary);
-}
-
-.sidebar a:hover span {
-    margin-left: 0.6rem;
-}
-
-.sidebar a.active::before {
+aside .sidebar a.active::before{
     content: '';
     width: 6px;
     height: 18px;
     background-color: var(--color-primary);
 }
 
-.sidebar a.active span {
+aside .sidebar a.active span{
     color: var(--color-primary);
-    margin-left: calc(1rem -3px);
+    margin-left: calc(1rem - 3px);
 }
 
-.sidebar .message-count {
+aside .sidebar a:hover{
+    color: var(--color-primary);
+}
+
+aside .sidebar a:hover span{
+    margin-left: 0.6rem;
+}
+
+aside .sidebar .message-count{
     background-color: var(--color-danger);
     padding: 2px 6px;
     color: var(--color-white);

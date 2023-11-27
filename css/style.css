@@ -2,5 +2,13 @@
 @import 'reset.css';
 @import 'variables.css';
 @import 'generic.css';
-@import 'main.css';
+@import 'normal.css';
 @import 'sidebar.css';
+@import 'analyse.css';
+@import 'new-users.css';
+@import 'recent-orders.css';
+@import 'right-section-nav.css';
+@import 'nav-profile.css';
+@import 'user-profile.css';
+@import 'reminders.css';
+@import 'responsive.css'
